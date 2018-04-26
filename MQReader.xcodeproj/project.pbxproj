@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003488472091CFE000072785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 003488462091CFE000072785 /* AppDelegate.m */; };
+		0034884A2091CFE000072785 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003488492091CFE000072785 /* ViewController.m */; };
+		0034884D2091CFE000072785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0034884B2091CFE000072785 /* Main.storyboard */; };
+		0034884F2091CFE000072785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0034884E2091CFE000072785 /* Assets.xcassets */; };
+		003488522091CFE000072785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003488502091CFE000072785 /* LaunchScreen.storyboard */; };
+		003488552091CFE000072785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 003488542091CFE000072785 /* main.m */; };
+		0034885F2091CFE000072785 /* MQReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0034885E2091CFE000072785 /* MQReaderTests.m */; };
+		0034886A2091CFE100072785 /* MQReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 003488692091CFE100072785 /* MQReaderUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0034885B2091CFE000072785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0034883A2091CFE000072785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 003488412091CFE000072785;
+			remoteInfo = MQReader;
+		};
+		003488662091CFE100072785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0034883A2091CFE000072785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 003488412091CFE000072785;
+			remoteInfo = MQReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003488422091CFE000072785 /* MQReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		003488452091CFE000072785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		003488462091CFE000072785 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		003488482091CFE000072785 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		003488492091CFE000072785 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0034884C2091CFE000072785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0034884E2091CFE000072785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		003488512091CFE000072785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		003488532091CFE000072785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003488542091CFE000072785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0034885A2091CFE000072785 /* MQReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0034885E2091CFE000072785 /* MQReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQReaderTests.m; sourceTree = "<group>"; };
+		003488602091CFE000072785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003488652091CFE100072785 /* MQReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		003488692091CFE100072785 /* MQReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQReaderUITests.m; sourceTree = "<group>"; };
+		0034886B2091CFE100072785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0034883F2091CFE000072785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		003488572091CFE000072785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		003488622091CFE100072785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003488392091CFE000072785 = {
+			isa = PBXGroup;
+			children = (
+				003488442091CFE000072785 /* MQReader */,
+				0034885D2091CFE000072785 /* MQReaderTests */,
+				003488682091CFE100072785 /* MQReaderUITests */,
+				003488432091CFE000072785 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		003488432091CFE000072785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				003488422091CFE000072785 /* MQReader.app */,
+				0034885A2091CFE000072785 /* MQReaderTests.xctest */,
+				003488652091CFE100072785 /* MQReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		003488442091CFE000072785 /* MQReader */ = {
+			isa = PBXGroup;
+			children = (
+				003488452091CFE000072785 /* AppDelegate.h */,
+				003488462091CFE000072785 /* AppDelegate.m */,
+				003488482091CFE000072785 /* ViewController.h */,
+				003488492091CFE000072785 /* ViewController.m */,
+				0034884B2091CFE000072785 /* Main.storyboard */,
+				0034884E2091CFE000072785 /* Assets.xcassets */,
+				003488502091CFE000072785 /* LaunchScreen.storyboard */,
+				003488532091CFE000072785 /* Info.plist */,
+				003488542091CFE000072785 /* main.m */,
+			);
+			path = MQReader;
+			sourceTree = "<group>";
+		};
+		0034885D2091CFE000072785 /* MQReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				0034885E2091CFE000072785 /* MQReaderTests.m */,
+				003488602091CFE000072785 /* Info.plist */,
+			);
+			path = MQReaderTests;
+			sourceTree = "<group>";
+		};
+		003488682091CFE100072785 /* MQReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				003488692091CFE100072785 /* MQReaderUITests.m */,
+				0034886B2091CFE100072785 /* Info.plist */,
+			);
+			path = MQReaderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		003488412091CFE000072785 /* MQReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0034886E2091CFE100072785 /* Build configuration list for PBXNativeTarget "MQReader" */;
+			buildPhases = (
+				0034883E2091CFE000072785 /* Sources */,
+				0034883F2091CFE000072785 /* Frameworks */,
+				003488402091CFE000072785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQReader;
+			productName = MQReader;
+			productReference = 003488422091CFE000072785 /* MQReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		003488592091CFE000072785 /* MQReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 003488712091CFE100072785 /* Build configuration list for PBXNativeTarget "MQReaderTests" */;
+			buildPhases = (
+				003488562091CFE000072785 /* Sources */,
+				003488572091CFE000072785 /* Frameworks */,
+				003488582091CFE000072785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0034885C2091CFE000072785 /* PBXTargetDependency */,
+			);
+			name = MQReaderTests;
+			productName = MQReaderTests;
+			productReference = 0034885A2091CFE000072785 /* MQReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		003488642091CFE100072785 /* MQReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 003488742091CFE100072785 /* Build configuration list for PBXNativeTarget "MQReaderUITests" */;
+			buildPhases = (
+				003488612091CFE100072785 /* Sources */,
+				003488622091CFE100072785 /* Frameworks */,
+				003488632091CFE100072785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				003488672091CFE100072785 /* PBXTargetDependency */,
+			);
+			name = MQReaderUITests;
+			productName = MQReaderUITests;
+			productReference = 003488652091CFE100072785 /* MQReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0034883A2091CFE000072785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Meng;
+				TargetAttributes = {
+					003488412091CFE000072785 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					003488592091CFE000072785 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 003488412091CFE000072785;
+					};
+					003488642091CFE100072785 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 003488412091CFE000072785;
+					};
+				};
+			};
+			buildConfigurationList = 0034883D2091CFE000072785 /* Build configuration list for PBXProject "MQReader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 003488392091CFE000072785;
+			productRefGroup = 003488432091CFE000072785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				003488412091CFE000072785 /* MQReader */,
+				003488592091CFE000072785 /* MQReaderTests */,
+				003488642091CFE100072785 /* MQReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		003488402091CFE000072785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003488522091CFE000072785 /* LaunchScreen.storyboard in Resources */,
+				0034884F2091CFE000072785 /* Assets.xcassets in Resources */,
+				0034884D2091CFE000072785 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		003488582091CFE000072785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		003488632091CFE100072785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0034883E2091CFE000072785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0034884A2091CFE000072785 /* ViewController.m in Sources */,
+				003488552091CFE000072785 /* main.m in Sources */,
+				003488472091CFE000072785 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		003488562091CFE000072785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0034885F2091CFE000072785 /* MQReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		003488612091CFE100072785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0034886A2091CFE100072785 /* MQReaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0034885C2091CFE000072785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 003488412091CFE000072785 /* MQReader */;
+			targetProxy = 0034885B2091CFE000072785 /* PBXContainerItemProxy */;
+		};
+		003488672091CFE100072785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 003488412091CFE000072785 /* MQReader */;
+			targetProxy = 003488662091CFE100072785 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0034884B2091CFE000072785 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0034884C2091CFE000072785 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		003488502091CFE000072785 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				003488512091CFE000072785 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0034886C2091CFE100072785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0034886D2091CFE100072785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0034886F2091CFE100072785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZV6GB659Y;
+				INFOPLIST_FILE = MQReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meng.MQReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		003488702091CFE100072785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZV6GB659Y;
+				INFOPLIST_FILE = MQReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meng.MQReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		003488722091CFE100072785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZV6GB659Y;
+				INFOPLIST_FILE = MQReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meng.MQReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQReader.app/MQReader";
+			};
+			name = Debug;
+		};
+		003488732091CFE100072785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZV6GB659Y;
+				INFOPLIST_FILE = MQReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meng.MQReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQReader.app/MQReader";
+			};
+			name = Release;
+		};
+		003488752091CFE100072785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZV6GB659Y;
+				INFOPLIST_FILE = MQReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meng.MQReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQReader;
+			};
+			name = Debug;
+		};
+		003488762091CFE100072785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZV6GB659Y;
+				INFOPLIST_FILE = MQReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meng.MQReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MQReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0034883D2091CFE000072785 /* Build configuration list for PBXProject "MQReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0034886C2091CFE100072785 /* Debug */,
+				0034886D2091CFE100072785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0034886E2091CFE100072785 /* Build configuration list for PBXNativeTarget "MQReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0034886F2091CFE100072785 /* Debug */,
+				003488702091CFE100072785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		003488712091CFE100072785 /* Build configuration list for PBXNativeTarget "MQReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003488722091CFE100072785 /* Debug */,
+				003488732091CFE100072785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		003488742091CFE100072785 /* Build configuration list for PBXNativeTarget "MQReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003488752091CFE100072785 /* Debug */,
+				003488762091CFE100072785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0034883A2091CFE000072785 /* Project object */;
+}
