@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -17,7 +18,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self makeWindowVisible:launchOptions];
+    
     return YES;
+}
+
+#pragma mark - Make window visible
+
+- (void)makeWindowVisible:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    
+    if (_tabBarViewController == nil){
+        self.tabBarViewController = [[MQBaseTabBarController alloc] init];
+    }
+    self.window.rootViewController = _tabBarViewController;
+    
+    [self.window makeKeyAndVisible];
 }
 
 
