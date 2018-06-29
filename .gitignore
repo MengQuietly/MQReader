@@ -17,6 +17,29 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+# 忽略DSStore文件
+*/.DS_Store
+.DS_Store
+*/build/*
+
+# 忽略Xcode本地用户配置信息
+*.xcuserdatad/
+xcuserdata/
+xcshareddata/
+.metadata/
+
+# 忽略`Pods/`和`Podfile.lock`
+# Pods/
+# Podfile.lock
+# !Podfile
+# !Podfile.lock
+
+#忽略打包生成文件
+log/
+*.log
+*.xcarchivce
+*.ipa
+
 ## Other
 *.moved-aside
 *.xccheckout
