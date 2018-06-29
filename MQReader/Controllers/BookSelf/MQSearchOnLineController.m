@@ -89,7 +89,6 @@
     [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     
-    
     for (int i = 1; i < 30; i++) {
         MQBookSelfModel *model = [[MQBookSelfModel alloc] init];
         if (i == 10) {
