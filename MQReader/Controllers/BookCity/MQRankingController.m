@@ -13,6 +13,10 @@
 
 @interface MQRankingController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate>
 
+
+@property (nonatomic, strong) UIButton *leftGGBtn;
+@property (nonatomic, strong) UIButton *rightMMBtn;
+
 @property (nonatomic, strong) UICollectionView *leftContentView;
 @property (nonatomic, strong) UITableView *rightContentView;
 @property (nonatomic ,strong) NSMutableArray *leftList;
@@ -25,6 +29,8 @@
 @property(assign,nonatomic) BOOL isKeepScrollState;
 @property(assign,nonatomic) BOOL isReturnLastOffset;
 @property(assign,nonatomic) NSInteger selectIndex;
+
+
 
 
 @end
@@ -53,9 +59,40 @@
     self.selectIndex = 1;
     
     UIView *titleView = [[UIView alloc] init];
-    titleView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 60);
+    titleView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 61);
     titleView.backgroundColor = RGBRandom;
+    CALayer *bottomBorder = [CALayer layer];
+    bottomBorder.frame = CGRectMake(0, 60, titleView.width, 1);
+    bottomBorder.backgroundColor = RGBGray.CGColor;
+    [titleView.layer addSublayer:bottomBorder];
     [self.view addSubview:titleView];
+    
+    
+    UIButton *leftGGBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.leftGGBtn = leftGGBtn;
+    leftGGBtn.selected = true;
+    leftGGBtn.tag = 111;
+    leftGGBtn.frame = CGRectMake(0, 0, SCREEN_WIDTH*0.5, 60);
+    [leftGGBtn setBackgroundColor:[UIColor whiteColor]];
+    [leftGGBtn setTitle:@"男生" forState:UIControlStateNormal];
+    [leftGGBtn setTitleColor:RGBNormal forState:UIControlStateNormal];
+    [leftGGBtn setTitleColor:RGBSelect forState:UIControlStateSelected];
+    [leftGGBtn addTarget:self action:@selector(typeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [titleView addSubview:leftGGBtn];
+    
+    UIButton *rightMMBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.rightMMBtn = rightMMBtn;
+    rightMMBtn.tag = 222;
+    rightMMBtn.frame = CGRectMake(SCREEN_WIDTH*0.5, 0, SCREEN_WIDTH*0.5, 60);
+    [rightMMBtn setBackgroundColor:[UIColor whiteColor]];
+    [rightMMBtn setTitle:@"女生" forState:UIControlStateNormal];
+    [rightMMBtn setTitleColor:RGBNormal forState:UIControlStateNormal];
+    [rightMMBtn setTitleColor:RGBSelect forState:UIControlStateSelected];
+    
+    [rightMMBtn addTarget:self action:@selector(typeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [titleView addSubview:rightMMBtn];
+    
     
     CGFloat leftY = CGRectGetMaxY(titleView.frame);
     self.leftContentView.y = leftY;
@@ -66,6 +103,18 @@
     CGFloat rightW = SCREEN_WIDTH - rightX;
     self.rightContentView.frame = CGRectMake(rightX, self.leftContentView.y, rightW, USE_HEIGHT - leftY);
     [self.view addSubview:self.rightContentView];
+}
+
+#pragma mark------typeBtnClick
+-(void) typeBtnClick:(UIButton *) btn {
+    
+    if ([btn.currentTitle isEqualToString:@"男生"]) {
+        btn.selected = true;
+        self.rightMMBtn.selected = false;
+    } else {
+        btn.selected = true;
+        self.leftGGBtn.selected = false;
+    }
 }
 
 #pragma mark------CollectionView的代理方法

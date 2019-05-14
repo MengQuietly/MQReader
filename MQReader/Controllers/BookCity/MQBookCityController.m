@@ -29,10 +29,13 @@
 -(void) setUpViews {
     
     UIButton *rankBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    rankBtn.frame = CGRectMake(0, 0, 50, 40);
-    rankBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [rankBtn setImage:[UIImage imageNamed:@"back_normal"] forState:UIControlStateNormal];
+    rankBtn.frame = CGRectMake(0, 0, 40, 40);
+    [rankBtn setImage:[UIImage imageNamed:@"rank_normal2"] forState:UIControlStateNormal];
     rankBtn.adjustsImageWhenHighlighted = NO;
+    [rankBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    CGSize imgS = rankBtn.imageView.frame.size;
+    rankBtn.imageEdgeInsets = UIEdgeInsetsMake(0, rankBtn.width-imgS.width, 0, 0);
+
     [rankBtn addTarget:self action:@selector(rankBtnClick) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rankBtn];
     
