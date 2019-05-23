@@ -9,7 +9,6 @@
 #import "MQRankingController.h"
 #import "MQButtonCollectionCell.h"
 #import "MQFindBookModel.h"
-#import "NSString+Extension.h"
 
 @interface MQRankingController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -150,7 +149,6 @@
     self.isReturnLastOffset = NO;
     
     if (self.isKeepScrollState) {
-        
         [self.rightContentView scrollRectToVisible:CGRectMake(0, self.curSelectModel.offsetScorller, self.rightContentView.width, self.rightContentView.height) animated:NO];
         
     } else {
@@ -257,7 +255,7 @@
     
     __weak typeof(self) weakSelf = self;
     [MQNetworking requestRankWithFindBook:^(id responseObject) {
-        //        NSLog(@"-----%@",responseObject);
+        NSLog(@"%ss 获取的数据==========%@",__func__, [[NSString alloc] stringJsonWithLocale:responseObject]);
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (!strongSelf) {
             return;
@@ -337,6 +335,9 @@
 
 #pragma mark  找书-排行榜
 -(void) requestBooksListData {
+    
+    NSLog(@"点击的 itemModel = %@",self.curSelectModel._id);
+    NSLog(@"shortTitle=%@,title=%@",self.curSelectModel.shortTitle,self.curSelectModel.title);
     
     
     

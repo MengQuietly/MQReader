@@ -10,6 +10,9 @@
 
 @interface NSString (Extension)
 
+// 打印json 格式
+- (NSString *) stringJsonWithLocale:(nullable id)locale;
+
 //将十六进制的字符串转换成NSString则可使用如下方式:
 + (NSString *)convertHexStrToString:(NSString *)str;
 

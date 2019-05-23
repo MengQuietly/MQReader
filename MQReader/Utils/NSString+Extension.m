@@ -10,6 +10,13 @@
 
 @implementation NSString (Extension)
 
+// 打印json 格式
+- (NSString *) stringJsonWithLocale:(nullable id)locale{
+    
+    return [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:locale options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+}
+
+
 //将十六进制的字符串转换成NSString则可使用如下方式:
 + (NSString *)convertHexStrToString:(NSString *)str {
     if (!str || [str length] == 0) {

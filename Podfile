@@ -7,5 +7,6 @@ pod 'Reachability'
 pod 'MJRefresh'
 pod 'MBProgressHUD'
 pod 'MJExtension'
-
+pod 'BAGridView'
+pod 'JXCategoryView'
 end

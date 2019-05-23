@@ -43,5 +43,7 @@ typedef void(^FailBlock)(NSError *error);
 + (void)requestRankWithFindBook:(SuccessBlock)successBlock fail:(FailBlock)failBlock;
 // 排行榜列表-item点击
 + (void)requestSearchTypeRankWithGender:(MQGenderType) genderType findType:(NSString *)findType major:(NSString *) itemStr successBlock:(SuccessBlock)successBlock fail:(FailBlock)failBlock;
+// 分类
++ (void)requestCategoryWithSuccessBook:(SuccessBlock)successBlock fail:(FailBlock)failBlock;
 
 @end

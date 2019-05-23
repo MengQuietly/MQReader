@@ -28,6 +28,7 @@
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 #define RGBRandom RGBA(arc4random_uniform(256.0f), arc4random_uniform(256.0f), arc4random_uniform(256.0f), arc4random_uniform(256.0f))
 #define RGB_ORANGE RGB(215, 147, 17)
+#define RGB_GREEN RGB(97, 202, 103)
 
 #define RGBSelect RGB(255, 185, 15)
 #define RGBNormal RGB(105, 105, 105)

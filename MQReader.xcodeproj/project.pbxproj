@@ -35,6 +35,9 @@
 		487E7EF420A147AC00788667 /* UIView+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E7EF320A147AC00788667 /* UIView+MBProgressHUD.m */; };
 		487E7EF720A1514A00788667 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 487E7EF620A1514A00788667 /* NSString+Extension.m */; };
 		A5604CDD307474E52AF8EEB9 /* libPods-MQReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C382BA7B75E0D921DA032E5C /* libPods-MQReader.a */; };
+		BB1FA47E228D4BB00026BB10 /* MQCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1FA47D228D4BB00026BB10 /* MQCategoryController.m */; };
+		BB1FA481228D69DE0026BB10 /* MQCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1FA480228D69DE0026BB10 /* MQCategoryModel.m */; };
+		BB1FA48422928DD40026BB10 /* MQCategoryDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1FA48322928DD40026BB10 /* MQCategoryDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,12 @@
 		487E7EF520A1514A00788667 /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		487E7EF620A1514A00788667 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		6F1F76DDC6F580C38286EDA6 /* Pods-MQReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQReader/Pods-MQReader.debug.xcconfig"; sourceTree = "<group>"; };
+		BB1FA47C228D4BB00026BB10 /* MQCategoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQCategoryController.h; sourceTree = "<group>"; };
+		BB1FA47D228D4BB00026BB10 /* MQCategoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQCategoryController.m; sourceTree = "<group>"; };
+		BB1FA47F228D69DE0026BB10 /* MQCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQCategoryModel.h; sourceTree = "<group>"; };
+		BB1FA480228D69DE0026BB10 /* MQCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQCategoryModel.m; sourceTree = "<group>"; };
+		BB1FA48222928DD40026BB10 /* MQCategoryDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQCategoryDetailController.h; sourceTree = "<group>"; };
+		BB1FA48322928DD40026BB10 /* MQCategoryDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQCategoryDetailController.m; sourceTree = "<group>"; };
 		C382BA7B75E0D921DA032E5C /* libPods-MQReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MQReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -212,6 +221,8 @@
 				00707A722094983400387EB7 /* MQBookSelfModel.m */,
 				480C504C20A18EDE003DD55B /* MQFindBookModel.h */,
 				480C504D20A18EDE003DD55B /* MQFindBookModel.m */,
+				BB1FA47F228D69DE0026BB10 /* MQCategoryModel.h */,
+				BB1FA480228D69DE0026BB10 /* MQCategoryModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,6 +305,10 @@
 				0034889F2092FBC500072785 /* MQBookCityController.m */,
 				480C504F20A1AA63003DD55B /* MQRankingController.h */,
 				480C505020A1AA63003DD55B /* MQRankingController.m */,
+				BB1FA47C228D4BB00026BB10 /* MQCategoryController.h */,
+				BB1FA47D228D4BB00026BB10 /* MQCategoryController.m */,
+				BB1FA48222928DD40026BB10 /* MQCategoryDetailController.h */,
+				BB1FA48322928DD40026BB10 /* MQCategoryDetailController.m */,
 			);
 			path = BookCity;
 			sourceTree = "<group>";
@@ -532,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00813DCB2093464B005DBDFF /* UIView+Extension.m in Sources */,
+				BB1FA47E228D4BB00026BB10 /* MQCategoryController.m in Sources */,
 				00813DC820934109005DBDFF /* MQBookSelfWithTitleView.m in Sources */,
 				00813DCE209388EE005DBDFF /* MQSearchOnLineController.m in Sources */,
 				0034889D2092FBB400072785 /* MQBookSelfController.m in Sources */,
@@ -546,7 +562,9 @@
 				003488A02092FBC500072785 /* MQBookCityController.m in Sources */,
 				00707A732094983400387EB7 /* MQBookSelfModel.m in Sources */,
 				487E7EF420A147AC00788667 /* UIView+MBProgressHUD.m in Sources */,
+				BB1FA481228D69DE0026BB10 /* MQCategoryModel.m in Sources */,
 				480C504E20A18EDE003DD55B /* MQFindBookModel.m in Sources */,
+				BB1FA48422928DD40026BB10 /* MQCategoryDetailController.m in Sources */,
 				00707A762094CBD800387EB7 /* MQBaseController.m in Sources */,
 				487E7EF720A1514A00788667 /* NSString+Extension.m in Sources */,
 				003488472091CFE000072785 /* AppDelegate.m in Sources */,

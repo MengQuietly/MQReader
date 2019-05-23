@@ -129,6 +129,7 @@
     AFHTTPSessionManager *manager = [MQNetworking AFHTTPSessionManager];
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     [manager GET:[MQNetworking urlWithApi:api] parameters:nil progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"=GET 获取的数据==========%@",responseObject);
         if (successBlock) {
             successBlock(responseObject);
         }
@@ -140,9 +141,39 @@
     }];
 }
 
+#pragma mark - 分类
++ (void)requestCategoryWithSuccessBook:(SuccessBlock)successBlock fail:(FailBlock)failBlock {
+    [MQNetworking getWithURI:MQCategoryShow success:successBlock fail:failBlock];
+}
+
 #pragma mark - 找书-排行榜
 + (void)requestRankWithFindBook:(SuccessBlock)successBlock fail:(FailBlock)failBlock {
     [MQNetworking getWithURI:MQFindRank success:successBlock fail:failBlock];
+}
+
+//MQFindRankWithType
+
+// 男 潜力榜 周榜 http://api.zhuishushenqi.com/ranking/54d42e72d9de23382e6877fb?isfree=1&freeappid=1234491385
+// 男 潜力榜 月榜 http://api.zhuishushenqi.com/ranking/564eee3ea82e3ada6f14b195?isfree=1&freeappid=1234491385
+// 男 潜力榜 总榜 http://api.zhuishushenqi.com/ranking/564eeeabed24953671f2a577?isfree=1&freeappid=1234491385
+
+//女 好评榜 周榜 http://api.zhuishushenqi.com/ranking/5a684551fc84c2b8efaab179?isfree=1&freeappid=1234491385
+
+// 排行榜列表-item 类型筛选 点击
++ (void)requestRankWithGender:(MQGenderType) genderType findType:(NSString *)findType major:(NSString *) itemStr successBlock:(SuccessBlock)successBlock fail:(FailBlock)failBlock{
+    
+    NSString *genderTypeStr = @"male";
+    if (genderType == MQGenderTypeMale) {
+        genderTypeStr = @"female";
+    }else if (genderType == MQGenderTypePicture) {
+        genderTypeStr = @"picture";
+    }else{
+        genderTypeStr = @"male";
+    }
+    
+    [MQNetworking getWithURI:[NSString stringWithFormat:@"%@/%@", MQCategories, genderTypeStr] success:successBlock fail:failBlock];
+    
+    
 }
 
 // 排行榜列表-item点击
